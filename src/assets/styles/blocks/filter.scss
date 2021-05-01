@@ -1,0 +1,42 @@
+.filter {
+  margin-bottom: 45px;
+}
+.filter__field {
+  display: flex;
+  align-items: center;
+
+  label {
+    color: #363636;
+    @include text-sets(16px, 24px, bold);
+    cursor: pointer;
+  }
+  input {
+    cursor: pointer;
+    border: 1px solid #d8d8d8;
+    border-radius: 25px;
+    padding-left: 33px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    width: 35%;
+    box-sizing: border-box;
+    margin-left: 20px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      border: 2px solid #45852d;
+      padding-left: 32px;
+      padding-top: 13px;
+      padding-bottom: 12px;
+    }
+
+    @media (max-width: $width-laptop) {
+      width: 100%;
+    }
+
+    @media (max-width: $width-desktop) {
+      width: 70%;
+    }
+
+  }
+}
